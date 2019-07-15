@@ -51,8 +51,7 @@ table {
 
 body {
     /* background-color: rgb(203, 197, 197); */
-    background-image: url("/assets/images/dices.jpg");
-    background-color: black
+    background-color: black;  
 }
 
 #heading {
@@ -67,6 +66,15 @@ body {
     text-align: center;
 }
 
+.gameStart {
+    font-size: 60px;
+    text-align: center;
+    margin: 150px auto;
+    background-color: bisque;
+    width: 40%;
+    border: solid rgb(0, 17, 255) 4px;
+}
+
 .lorem {
     text-align: center;
     padding: 40px;
@@ -78,12 +86,25 @@ body {
     color: rgb(21, 17, 17);
 }
 
-.innerdiv {
-    padding-top: 20px;
-    margin: 40px  auto;
-    background-color: rgb(143, 81, 70);
+.startdiv {
+    padding-top: 5px;
+    width: 80%;
+    margin: 20px auto;
     height: 400px;
-    width: 850px;
+    position: absolute;
+    margin-left: 10%;
+    background-color: rgb(226, 97, 74);
+    overflow: scroll;
+    
 }
 
+.innerdiv {
+    padding-top: 35px;
+    width: 100%;
+    margin: 20px auto;
+    height: 455px;
+    position: absolute;
+    background-color: rgb(226, 97, 74);
+
+}
 

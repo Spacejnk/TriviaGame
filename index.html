@@ -14,48 +14,50 @@
 <body>
     <div class="container">
         <h1 id="heading"><strong class="rc totally">Totally Trivial Trivia!</strong></h1>
-        <div class="innerdiv">
-            <h3 class="lorem">Time Remaining: <span id="timer">0</span></h3>
+        
+            <div class="startdiv"> <!-- innerDiv-->
+                <div class="innerdiv" id="hideDiv">
+                    <h1 class="gameStart" id="hideDiv" >Start!</h1>
+                </div> <!-- startDiv --> 
+            <h3 class="lorem">Time Remaining: <span id="timer"></span></h3>
+            <p>Correct: <span id="correctAnswer"></span></p>
+            <p>Wrong: <span id="wrongAnswer"></span></p>
+            <button class='darkBtn' id='results'>Get Results ></button>
             <br>
             <p class="lorem">Who was the first President of the United States?</p>
-            <form action="">
+            <form id="mainForm" action="">
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">George Washingtion
+                    <input type="radio" name="optradio" id="rightAnswer" value="right">George Washingtion
                 </label>
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">John Bushington
+                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">John Bushington
                 </label>
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">Abraham Lincoln
+                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Abraham Lincoln
                 </label>
             </form>
             <p class="lorem">What territory did the United States buy from France in 1803?</p>
-            <form action="">
+            <form id="mainForm" action="">
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">Texas
+                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Texas
                 </label>
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">the Louisiana Territory
+                    <input type="radio" name="optradio" id="rightAnswer" value="right">the Louisiana Territory
                 </label>
                 <label for="" class="lorem">
-                    <input type="radio" name="optradio">Normandy
+                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Normandy
                 </label>
             </form>
 
 
 
             <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt, nulla nisi laboriosam accusamus veritatis praesentium corporis mollitia? Quas, at. Magnam non libero numquam minima. Inventore velit nisi adipisci dolor.</p>
-        </div>
-        <p class="notes">create a timer function 
-            <br>
-            create radio button with a question
-            <br>
-            if timer reaches #0 .(text) all done!, correct answers: 0 ,
-            <br>
-            incorrect answers: 0 , and unanswered: 0
-        </p>
+            </div> <!-- innerDiv -->
+        
        
     </div>  
+    
+    
 </body>
 
 <script src="assets/javascript/app.js"></script>
