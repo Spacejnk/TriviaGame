@@ -6,14 +6,20 @@ var unAnswered = 0;
 
 // set timer --- wrap timer in on-click function  
 $("#hideDiv").click( function(){
-var timeleft = 15;
+var timeleft = 10;
 var downloadTimer = setInterval(function(){
   document.getElementById("timer").innerHTML = timeleft + " seconds";
   timeleft -= 1;
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-     document.getElementById("timer").innerHTML = "Finished!"
+    document.getElementById("timer").innerHTML = "Finished!";
+    
+    // line 38 var ifUnAnswered
+    clearInterval(ifUnAnswered());
+    
+
   }
+
 }, 1000); 
 
 });
@@ -28,26 +34,49 @@ $("#hideDiv").click( function(){
     }
 });
 
+ // ifUnAnswered
+ 
+var ifUnAnswered = function checkFunc() {
+
+    if (!$("input[name='answer']:checked").length < 3 ) {
+        unAnswered++;
+        $("#unAnswered").text(unAnswered);
+        alert("Not checked")
+    } else {
+        alert("Checked");
+    }
+    
+} // ifUnAnswered
 
 
+// Hide results until game over
+$(document).ready(function() {
+    setTimeout(function(){
+    $('#thisDiv').fadeIn();
+    }, 10000);
+    });
 
-$(document).ready(function () {
-    var $radios = $('input:radio[name="optradio"]');
-    $radios.change(function () {
-      var $selected = $radios.filter(':checked');
-      if ( $selected.val() === 'right' ) {
+
+$(document).ready(function(){
+    $('input[name=answer]').change(function(){
+      if($('input[name=answer]:checked').val() === "correct") {
           correctAnswer++;
-          alert("Right Answer!" );
-          $("#correctAnswer").text(correctAnswer);
-          } else if  ( $selected.val() === 'wrong' ) {
-            wrongAnswer++
-            alert("Wrong Answer!" );
-            $("#wrongAnswer").text(wrongAnswer);
-            } else if  ( $selected.val() == '' ) {
-                alert(" " );
-                }
-      });
+        $("#correctAnswer").text(correctAnswer);
+        alert('You have selected the correct answer!');
+      } else if($('input[name=answer]:checked').val() === "wrong"){
+        wrongAnswer++;
+        $("#wrongAnswer").text(wrongAnswer);
+        alert('You have selected the wrong answer!');
+
+      } 
+    });
+    
   });
+
+
+
+
+  
 
 
 

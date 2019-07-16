@@ -19,39 +19,44 @@
                 <div class="innerdiv" id="hideDiv">
                     <h1 class="gameStart" id="hideDiv" >Start!</h1>
                 </div> <!-- startDiv --> 
-            <h3 class="lorem">Time Remaining: <span id="timer"></span></h3>
-            <p>Correct: <span id="correctAnswer"></span></p>
-            <p>Wrong: <span id="wrongAnswer"></span></p>
-            <button class='darkBtn' id='results'>Get Results ></button>
-            <br>
-            <p class="lorem">Who was the first President of the United States?</p>
-            <form id="mainForm" action="">
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="rightAnswer" value="right">George Washingtion
-                </label>
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">John Bushington
-                </label>
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Abraham Lincoln
-                </label>
-            </form>
-            <p class="lorem">What territory did the United States buy from France in 1803?</p>
-            <form id="mainForm" action="">
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Texas
-                </label>
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="rightAnswer" value="right">the Louisiana Territory
-                </label>
-                <label for="" class="lorem">
-                    <input type="radio" name="optradio" id="wrongAnswer" value="wrong">Normandy
-                </label>
-            </form>
-
-
-
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque incidunt, nulla nisi laboriosam accusamus veritatis praesentium corporis mollitia? Quas, at. Magnam non libero numquam minima. Inventore velit nisi adipisci dolor.</p>
+                     <div id="thisDiv" style="display:none;">
+                <h3 class="lorem">Time Remaining: <span id="timer"></span></h3>
+                <p class="scoreInfo">Correct: <span id="correctAnswer"></span></p>
+                <p class="scoreInfo">Wrong: <span id="wrongAnswer"></span></p>
+                <p class="scoreInfo">Unanswered: <span id="unAnswered"></span></p>
+                     </div>
+               
+                    
+                        <p class="lorem">Who was the first President of the United States?</p>
+                            <input type="radio" name="answer" value="wrong" />John Bushington
+                            <input type="radio" name="answer" value="correct" />George Washingtion
+                            <input type="radio" name="answer" value="wrong" />Abraham Lincoln
+                    </label> 
+                </form>
+                   
+                    
+               
+                    
+                        <p class="lorem">What territory did the United States buy from France in 1803?</p>
+                            <input type="radio" name="answer" value="wrong" />Normandy 
+                            <input type="radio" name="answer" value="correct" />the Louisiana Territory Washingtion
+                            <input type="radio" name="answer" value="wrong" />Texas
+                    </label>
+                </form>    
+                    
+                    
+               
+                        
+                        <p class="lorem">Name the U.S. war between the North and the South?</p>
+                             <input type="radio" name="answer" value="correct" />The Civil War 
+                             <input type="radio" name="answer" value="wrong" />World War 1
+                             <input type="radio" name="answer" value="wrong" />The War of 1812
+                            
+                    </label>
+                </form>
+            
+            
+            
             </div> <!-- innerDiv -->
         
        
