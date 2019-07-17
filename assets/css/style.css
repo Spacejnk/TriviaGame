@@ -57,7 +57,6 @@ body {
 #heading {
     margin-top: 30px;
     font-size: 40px;
-    color: red;
     text-align: center;
 }
 
@@ -72,7 +71,8 @@ body {
     margin: 150px auto;
     background-color: bisque;
     width: 40%;
-    border: solid rgb(0, 17, 255) 4px;
+    border: solid rgb(140, 147, 240) 4px;
+    border-radius: 20px;
 }
 
 .lorem {
@@ -120,5 +120,17 @@ body {
     position: absolute;
     background-color: rgb(226, 97, 74);
 
+}
+
+#thisShowDiv {
+    display: block;
+    width: 200px;
+    margin: auto;
+    color: rgb(183, 183, 245);
+    background-color: rgb(242, 61, 61);
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
 }
 

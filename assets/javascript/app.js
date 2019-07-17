@@ -20,13 +20,13 @@ setInterval(changeColor, 1000);
 
 // set timer --- wrap timer in on-click function  
 $("#hideDiv").click( function(){
-var timeleft = 10;
+var timeleft = 50;
 var downloadTimer = setInterval(function(){
   document.getElementById("timer").innerHTML = timeleft + " seconds";
   timeleft -= 1;
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    document.getElementById("timer").innerHTML = "Finished!";
+    document.getElementById("timer").innerHTML = "Times Up!";
     // line 38 var ifUnAnswered
     clearInterval(ifUnAnswered());
     }
@@ -36,7 +36,7 @@ var downloadTimer = setInterval(function(){
 $(document).ready(function() {
     setTimeout(function(){
     $('#thisDiv').fadeIn();
-    }, 14000);
+    }, 52000);
     });
 });
 
@@ -73,13 +73,22 @@ $(document).ready(function(){
  });
 
 
+ // Show text after game
+ function showIt() {
+    document.getElementById("thisShowDiv").style.visibility = "visible";
+    // reload page onclick
+    $('#thisShowDiv').click(function() {
+        location.reload();
+    });
+  }
+setTimeout("showIt()", 58000); // after a number of sec
+
 
 
   
 
 
-
-
+  
 
 
 
