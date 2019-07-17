@@ -13,14 +13,20 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="heading"><strong class="rc totally">Totally Trivial Trivia!</strong></h1>
+        <!-- <h1 id="heading"><strong class="rc totally">Totally Trivial Trivia!</strong></h1> -->
+        <h1 id="heading">
+            <strong class="rc totally">Totally</strong> 
+            <strong class="rc totally">Trivial</strong>
+            <strong class="rc totally">Trivia!</strong>
+        </h1>
         
-            <div class="startdiv"> <!-- innerDiv-->
+        <div class="startdiv"> <!-- innerDiv-->
                 <div class="innerdiv" id="hideDiv">
                     <h1 class="gameStart" id="hideDiv" >Start!</h1>
                 </div> <!-- startDiv --> 
-                     <div id="thisDiv" style="display:none;">
                 <h3 class="lorem">Time Remaining: <span id="timer"></span></h3>
+                     <div id="thisDiv" style="display:none;">
+                <!-- <h3 class="lorem">Time Remaining: <span id="timer"></span></h3> -->
                 <p class="scoreInfo">Correct: <span id="correctAnswer"></span></p>
                 <p class="scoreInfo">Wrong: <span id="wrongAnswer"></span></p>
                 <p class="scoreInfo">Unanswered: <span id="unAnswered"></span></p>
@@ -34,7 +40,7 @@
                             <input type="radio" class='answer' name="answer" value="wrong" />Abraham Lincoln
                      </label> 
                 </form> 
-            </div>
+        </div>
                    
                     <div id="x">
                 <!-- <form action=""> 
