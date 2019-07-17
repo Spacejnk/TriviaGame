@@ -78,15 +78,16 @@ body {
 .lorem {
     text-align: center;
     padding: 15px;
-    margin-top: 15px;
-    color: rgb(21, 17, 17);
+    margin-top: 0px;
+    color: rgb(7, 225, 14);
+    
 }
 
 #x {
     text-align: center;
     padding: 15px;
     margin-top: 15px;
-    color: rgb(21, 17, 17);
+    color:rgb(14, 239, 255)
 }
 
 .scoreInfo {
@@ -107,16 +108,15 @@ body {
     height: 700px;
     position: absolute;
     margin-left: 10%;
-    background-color: rgb(226, 97, 74);
+    background-image: url("../images/lady.jpg");
     overflow: scroll;
     
 }
 
 .innerdiv {
-    padding-top: 35px;
+    margin-top: -10px;
     width: 100%;
-    margin: 10px auto;
-    height: 755px;
+    height: 855px;
     position: absolute;
     background-color: rgb(226, 97, 74);
 
