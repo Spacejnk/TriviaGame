@@ -4,6 +4,7 @@ var correctAnswer = 0;
 var wrongAnswer = 0;
 var unAnswered = 0;
 
+// random color Totally Trivial Trivia  
 var colors = ["blue", "white", "red"]
 var currentColor = 0
 var lis = document.querySelectorAll(".rc")
@@ -15,7 +16,6 @@ function changeColor() {
     lis[i].style.color = colors[(currentColor +i) % colors.length]
   }
 }
-
 setInterval(changeColor, 1000);
 
 // set timer --- wrap timer in on-click function  
@@ -32,6 +32,12 @@ var downloadTimer = setInterval(function(){
     }
   }, 1000); 
 
+// Hide results until game over
+$(document).ready(function() {
+    setTimeout(function(){
+    $('#thisDiv').fadeIn();
+    }, 14000);
+    });
 });
 
 // hide start div when click
@@ -47,18 +53,11 @@ $("#hideDiv").click( function(){
  // ifUnAnswered
  var ifUnAnswered = function checkFunc() {
 
-    if (!$(".answer:checked").length < 3 ) {
-        unAnswered = 3 - $(".answer:checked").length;
+    if (!$(".answer:checked").length < 4 ) {
+        unAnswered = 4 - $(".answer:checked").length;
         $("#unAnswered").text(unAnswered);
     } 
 } 
-
-// Hide results until game over
-$(document).ready(function() {
-    setTimeout(function(){
-    $('#thisDiv').fadeIn();
-    }, 14000);
-    });
 
 // Increment wins and losses
 $(document).ready(function(){
