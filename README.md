@@ -1,3 +1,3 @@
 # TriviaGame
 
-[Trivia Game](https://www.google.com)
+[Trivia Game](https://spacejnk.github.io/TriviaGame/)
