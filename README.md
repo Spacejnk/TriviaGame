@@ -10,7 +10,7 @@
           * after countdown
          
 ### Build
-* > #### HTML, CSS and JavaScript
+*  #### HTML, CSS and JavaScript
 
 ## [Trivia Game Link](https://spacejnk.github.io/TriviaGame/)
 
