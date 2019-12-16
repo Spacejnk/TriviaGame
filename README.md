@@ -9,7 +9,7 @@
       * Wrong
           * after countdown
          
-### Build
+## Build
 *  #### HTML, CSS and JavaScript
 
 ## [Trivia Game Link](https://spacejnk.github.io/TriviaGame/)
