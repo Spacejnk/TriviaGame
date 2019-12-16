@@ -3,7 +3,7 @@
 *  ### Totally Trivial Trivia
 *  #### You have 4 questions to answer based on some of the United States history and it's independence.
    * Their is a start button with 50 seconds to countdown.
-   * After questions are answered your results will display correct answers. 
+   * After questions are answered your results will be displayed. 
       * Correct
       * Unanswered 
       * Wrong
