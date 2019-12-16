@@ -12,6 +12,6 @@
 ### Build
 * > #### HTML, CSS and JavaScript
 
-[Trivia Game Link](https://spacejnk.github.io/TriviaGame/)
+## [Trivia Game Link](https://spacejnk.github.io/TriviaGame/)
 
 
